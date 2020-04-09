@@ -43,9 +43,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 cd ~/<git_root_folder>/helloworld/product.helloworld
 ```
 
-**Note**
-
-This directory must exist as it is required to have installed already the Web-based Hello World case study.
+**Note**: This directory must exist as it is required to have installed already the Web-based Hello World case study.
 
 
 3- Jump into the virtual environment (refered to also as *guest*) : 
