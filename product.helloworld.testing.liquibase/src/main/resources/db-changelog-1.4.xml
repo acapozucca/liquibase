@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+		
+		<changeSet id="alter-1" author="author2">
+			 <addColumn tableName="LIQ_TEST1">
+        		<column name="test1_company" type="varchar(15)"/>
+   			 </addColumn>
+		</changeSet>	
+		
+		<changeSet id="update-1" author="author2">	
+			<update tableName="LIQ_TEST1">
+				<column name="test1_company" value="ArcelorMittal"/>
+				<where>test1_id='1'</where>
+			</update>
+		</changeSet>
+		
+		<changeSet id="tag-1.4" author="author2">
+			<tagDatabase tag="1.4alter" />
+		</changeSet>
+</databaseChangeLog>

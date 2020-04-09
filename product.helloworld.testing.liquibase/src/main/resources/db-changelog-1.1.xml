@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+		 <changeSet id="create-1" author="author1">
+			<createTable tableName="LIQ_TEST1">
+				<column name="test1_id" type="int"
+				autoIncrement="true">
+				<constraints primaryKey="true" nullable="false"/>
+				</column>
+				<column name="test1_name" type="varchar(50)"/>
+				<column name="test1_location" type="varchar(50)">
+				<constraints nullable="false"/>
+				</column>
+			</createTable>
+			</changeSet>
+		<changeSet id="create-2" author="author1">
+			<createTable tableName="LIQ_TEST2">
+				<column name="test2_id" type="int"
+				autoIncrement="true">
+				<constraints primaryKey="true" nullable="false"/>
+				</column>
+				<column name="test2_name" type="varchar(50)"/>
+				<column name="test2_location" type="varchar(50)">
+				<constraints nullable="false"/>
+				</column>
+			</createTable>
+		</changeSet>
+		<changeSet id="tag-1.1" author="author1">
+				<tagDatabase tag="1.1" />
+		</changeSet>
+</databaseChangeLog>

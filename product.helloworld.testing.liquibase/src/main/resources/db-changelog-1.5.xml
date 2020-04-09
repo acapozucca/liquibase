@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+		<changeSet id="insert-3" author="author1">
+			<insert tableName="LIQ_TEST1">
+				<column name="test1_id" value="02"/>
+				<column name="test1_name" value="logistic"/>
+				<column name="test1_location" value="Germany"/>
+				<column name="test1_company" value="BMW"/>				
+			</insert>
+			
+			<insert tableName="LIQ_TEST1">
+				<column name="test1_id" value="03"/>
+				<column name="test1_name" value="board"/>
+				<column name="test1_location" value="Russia"/>
+				<column name="test1_company" value="Yandex"/>				
+			</insert>
+			
+			<insert tableName="LIQ_TEST1">
+				<column name="test1_id" value="04"/>
+				<column name="test1_name" value="administration"/>
+				<column name="test1_location" value="Argentina"/>
+				<column name="test1_company" value="Globant"/>				
+			</insert>
+			
+			
+			
+		</changeSet>
+		<changeSet id="tag-1.5" author="author1">
+			<tagDatabase tag="1.5insert" />
+		</changeSet>
+</databaseChangeLog>
