@@ -43,7 +43,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 cd ~/<git_root_folder>/helloworld/product.helloworld
 ```
 
-**Note**: This directory must exist as it is required to have installed already the Web-based Hello World case study.
+**Note**: this directory must exist as it is required to have installed already the Web-based Hello World case study.
 
 
 3- Jump into the virtual environment (refered to also as *guest*) : 
@@ -57,9 +57,7 @@ cd ~/<git_root_folder>/helloworld/product.helloworld
 mysql -u root -p 
 ```
 
-**Note**:  
-
-root's password is “12345678”
+**Note**:  root's password is “12345678”
 
 
 5- Create new DB user named 'ac'
@@ -72,9 +70,7 @@ CREATE USER ‘ac’@‘%' IDENTIFIED BY ‘ac';
 grant all privilegies on hellodb.* TO 'ac'@'%’;
 ```
 
-**Note**:
-
-The user can be removed doing
+**Note**: the user can be removed doing:
 ```
 DROP USER 'ac'@'%';
 ```
@@ -139,9 +135,8 @@ Connection set done!
 mysql -u ac -p 
 ```
 
-**Note**:  
+**Note**:  Password is “ac”
 
-Password is “ac”
 
 2- See the current tables into the DB "hellodb"
 
@@ -174,9 +169,7 @@ This is the state of the DB in terms of tables before updating with Liquibase.
 ```
 cd ~/<git_root_folder>/liquibase/product.helloworld.testing.liquibase/src/main/resources
 ```
-**Note**:
-
-This directory must contain the following files
+**Note**: This directory must contain the following files:
 ```
  db-changelog-1.1.xml
  db-changelog-1.2.xml
@@ -202,9 +195,7 @@ Liquibase: Update has been successful.
 ```
 
 
-**Note**:
-
-Verbose mode
+**Note**: for running in verbose mode use:
 ```
 liquibase --logLevel debug update
 ```
@@ -380,11 +371,10 @@ mysql> select * from LIQ_TEST1;
 ```
 
 
-**Notes**:
-There is an extra way to check the modifications made by change log 1.5.
+**Notes**: There is an extra way to check the modifications made by change log 1.5.
 
-* In file CheckConnectivity.java, uncomment code between lines 18-39 
-* Run
+* In file CheckConnectivity.java, uncomment code between lines 18-39 , and then run:
+
 
 ```
 mvn exec:java  -Dexec.mainClass=database.CheckConnectivity
@@ -429,8 +419,7 @@ mysql> drop table DATABASECHANGELOG;
 mysql -u root -p  < /vagrant_scripts/db-helloworld.sql
 ```
 
-**Note**
-root's password: 12345678
+**Note**: root's password: 12345678
 
 
 
