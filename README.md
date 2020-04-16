@@ -67,7 +67,7 @@ CREATE USER ‘ac’@‘%' IDENTIFIED BY ‘ac';
 
 6- Grant access to user 'ac'
 ```
-grant all privilegies on hellodb.* TO 'ac'@'%’;
+grant all privileges on hellodb.* TO 'ac'@'%';
 ```
 
 **Note**: the user can be removed doing:
